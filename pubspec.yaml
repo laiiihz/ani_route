@@ -2,7 +2,7 @@ name: ani_route
 description: A lightweight flutter route tool.
 version: 0.0.1
 author: laiiihz
-homepage: github.com/laiiihz/ani_route
+homepage: https://github.com/laiiihz/ani_route
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
