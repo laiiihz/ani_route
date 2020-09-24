@@ -1,6 +1,6 @@
 # ani_route
 
-A new Flutter package.
+Flutter 轻量级路由工具🔧.
 
 ## Getting Started
 
