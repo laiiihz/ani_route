@@ -1,7 +1,6 @@
 name: ani_route
-description: A lightweight flutter route tool.
-version: 0.0.1
-author: laiiihz
+description: A lightweight flutter route tool.Provider a simple way to manager routes , direct use dart raw dart params.
+version: 0.0.2
 homepage: https://github.com/laiiihz/ani_route
 
 environment:

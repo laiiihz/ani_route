@@ -11,7 +11,14 @@ import 'package:flutter/widgets.dart';
 ///
 ///快速开发自定义路由
 ///
+///使用前请调用 ARoute.init
+///
 class ARoute {
+  ///初始化Route
+  static init(bool isIOS) {
+    APageRoutes.setPlatormIOS(isIOS);
+  }
+
   ///same as `Navigator.push`
   ///
   /// default is `APageRoutes.defaultRoute`
@@ -22,7 +29,7 @@ class ARoute {
   static Future push(
     BuildContext context,
     Widget page, {
-    Router route = APageRoutes.defaultRoute,
+    ARouter route = APageRoutes.defaultRoute,
   }) async {
     await Navigator.push(context, route(context, page));
   }
@@ -32,7 +39,7 @@ class ARoute {
   static Future pushReplace(
     BuildContext context,
     Widget page, {
-    Router route = APageRoutes.defaultRoute,
+    ARouter route = APageRoutes.defaultRoute,
   }) async {
     await Navigator.pushReplacement(context, route(context, page));
   }
